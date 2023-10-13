@@ -5,7 +5,7 @@
 
 ## 게임 컨셉
 
-
+[팀노션](https://www.notion.so/02-55ee06ccbc1148429fee53db9ece7bc8)
 
 ## 게임 소개
 
