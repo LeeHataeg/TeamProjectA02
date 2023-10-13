@@ -5,27 +5,13 @@
 
 ## 게임 컨셉
 
-[팀노션](https://www.notion.so/02-55ee06ccbc1148429fee53db9ece7bc8)
+[팀 노션](https://www.notion.so/02-55ee06ccbc1148429fee53db9ece7bc8)
 
 ## 게임 소개
 
-- 게임 이름 : 
+- 게임 이름 : 고양이 간식 대탈환
 
 - 구현 사항
-  - 필수 구현 사항
-    - 인트로 씬
-    - 자유 게임
-  - 선택 구현 사항
-    - [ ] 오브젝트 풀링
-    - [ ] Instantiate로 오브젝트 생성
-    - [ ] InputAction
-    - [ ] 스크립트로 버튼에 이벤트 추가
-    - [ ] delegate
-    - [ ] Raycast
-    - [ ] generic을 이용한 싱글톤
-    - [ ] FSM
-    - [ ] Dictionary
-    - [ ] Queue, Stack
  
 <br>
 <br>
