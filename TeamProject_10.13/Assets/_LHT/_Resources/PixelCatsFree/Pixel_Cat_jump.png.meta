@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3c3a1eec2d98bc4d952c935b95987d2
+guid: b909a7342f1abec4087f7b4071326342
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixel_Cat_Idle0
+      name: Pixel_Cat_jump_left0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,20 +118,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1df958c69f2960348bb5cf937b40ec59
-      internalID: -232739445
+      spriteID: ae52c8610a19bf54888fe5f8d27ae69b
+      internalID: -1569856889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_Idle1
+      name: Pixel_Cat_jump_left1
       rect:
         serializedVersion: 2
         x: 32
@@ -139,20 +139,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66a66afaac67458458e0fa82ec70f97d
-      internalID: 72790163
+      spriteID: b39ead71eda6847498a4170d37d0e384
+      internalID: 58329511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_Idle2
+      name: Pixel_Cat_jump_left2
       rect:
         serializedVersion: 2
         x: 64
@@ -160,20 +160,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 798ace28d779ac84eaf6fb6e2a7387cb
-      internalID: -1030087022
+      spriteID: 49b65865530063541bc4713649488585
+      internalID: 225807048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_Back
+      name: Pixel_Cat_jump_left3
       rect:
         serializedVersion: 2
         x: 96
@@ -181,20 +181,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e05b1c8fe2be1748bdbb1b425a3ab0e
-      internalID: -121355294
+      spriteID: e26ced97ac95b96449af6f17b2b7a830
+      internalID: 1509047859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_Sit0
+      name: Pixel_Cat_jump_left4
       rect:
         serializedVersion: 2
         x: 0
@@ -202,20 +202,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 078333362364faa4480d121ac1616411
-      internalID: 1741854874
+      spriteID: 6fa247055e6f0104394e79e8af8145e8
+      internalID: -974753370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_Sit1
+      name: Pixel_Cat_jump_left5
       rect:
         serializedVersion: 2
         x: 32
@@ -223,20 +223,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d11cafb47135ed647b43d46f2744e724
-      internalID: 1143582943
+      spriteID: 87f42a34cedff8a44ac35366062d2f2d
+      internalID: -1377786464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_Sit2
+      name: Pixel_Cat_jump_left6
       rect:
         serializedVersion: 2
         x: 64
@@ -244,20 +244,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ac9e2a79ad5fa5468695150ec4a4902
-      internalID: -1425048035
+      spriteID: cd8e00a93a52f8642b14f3de9c0261ed
+      internalID: 1685795828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_WalkLef0
+      name: Pixel_Cat_jump_left7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b221628f1d99b9b4eb3e776da3b1fee8
+      internalID: -988323134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel_Cat_jump_right3
       rect:
         serializedVersion: 2
         x: 0
@@ -265,20 +286,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 607df3e832b43ff4eae625d67d1c5748
-      internalID: 474500396
+      spriteID: 41cdaabfbc590cc4fa816f66e43604ec
+      internalID: -379453710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_WalkLeft1
+      name: Pixel_Cat_jump_right2
       rect:
         serializedVersion: 2
         x: 32
@@ -286,20 +307,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11c6a2dd79eb5c41a4c984c20d9665f
-      internalID: 1410534232
+      spriteID: f1b3fb302c4b5664a99b9cb847b750bc
+      internalID: 681826351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_WalkLeft2
+      name: Pixel_Cat_jump_right1
       rect:
         serializedVersion: 2
         x: 64
@@ -307,20 +328,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff4926f0f8ea13e4a97fd36afc19efe0
-      internalID: 1804658833
+      spriteID: ef2a91ee4ac0c694487c2ffcea67651e
+      internalID: 7428328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_WalkRight0
+      name: Pixel_Cat_jump_right0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ced3d54a624370439402b515d358b0e
+      internalID: 1208915993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel_Cat_jump_right7
       rect:
         serializedVersion: 2
         x: 0
@@ -328,20 +370,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 647a32790ad714346b4dda9ee5002e9e
-      internalID: -1280785346
+      spriteID: e4b26b1483a565141b3989ac790a7d43
+      internalID: 767648524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_WalkRight1
+      name: Pixel_Cat_jump_right6
       rect:
         serializedVersion: 2
         x: 32
@@ -349,20 +391,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ea9fa33bb551674cb046e510cb232d5
-      internalID: -471237997
+      spriteID: 0b05ae5587879814e9402a3fda0467b3
+      internalID: 881650771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel_Cat_WalkRight2
+      name: Pixel_Cat_jump_right5
       rect:
         serializedVersion: 2
         x: 64
@@ -370,14 +412,35 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85516440b7e03474e82b84c25fc72120
-      internalID: -905296800
+      spriteID: a204b1d54c2346e4ea1e25c3a64fc549
+      internalID: 2128258666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel_Cat_jump_right4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2eceab2f4437f4cb19d1c01ee7173a
+      internalID: -1934317069
       vertices: []
       indices: 
       edges: []
@@ -393,19 +456,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pixel_Cat_Back: -121355294
-      Pixel_Cat_Idle0: -232739445
-      Pixel_Cat_Idle1: 72790163
-      Pixel_Cat_Idle2: -1030087022
-      Pixel_Cat_Sit0: 1741854874
-      Pixel_Cat_Sit1: 1143582943
-      Pixel_Cat_Sit2: -1425048035
-      Pixel_Cat_WalkLef0: 474500396
-      Pixel_Cat_WalkLeft1: 1410534232
-      Pixel_Cat_WalkLeft2: 1804658833
-      Pixel_Cat_WalkRight0: -1280785346
-      Pixel_Cat_WalkRight1: -471237997
-      Pixel_Cat_WalkRight2: -905296800
+      Pixel_Cat_jump_left0: -1569856889
+      Pixel_Cat_jump_left1: 58329511
+      Pixel_Cat_jump_left2: 225807048
+      Pixel_Cat_jump_left3: 1509047859
+      Pixel_Cat_jump_left4: -974753370
+      Pixel_Cat_jump_left5: -1377786464
+      Pixel_Cat_jump_left6: 1685795828
+      Pixel_Cat_jump_left7: -988323134
+      Pixel_Cat_jump_right0: 1208915993
+      Pixel_Cat_jump_right1: 7428328
+      Pixel_Cat_jump_right2: 681826351
+      Pixel_Cat_jump_right3: -379453710
+      Pixel_Cat_jump_right4: -1934317069
+      Pixel_Cat_jump_right5: 2128258666
+      Pixel_Cat_jump_right6: 881650771
+      Pixel_Cat_jump_right7: 767648524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
