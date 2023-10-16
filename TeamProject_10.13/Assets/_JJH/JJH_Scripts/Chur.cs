@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class Chur : ItemData
 {
-    [SerializeField]
-    private float magnetTime;
-
-
-    void Start()
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        base.OnTriggerEnter2D(collision);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            Player.Instance.MagneticEffect();
+        }
     }
 }
