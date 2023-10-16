@@ -571,9 +571,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 500
   playerScore: 0
-  magnetTime: 3
-  magnetRange: 3
-  magnetPower: 10
+  magnetTime: 8
+  magnetRange: 15
+  magnetPower: 0.5
 --- !u!212 &1878317304
 SpriteRenderer:
   m_ObjectHideFlags: 0

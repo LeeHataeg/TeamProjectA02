@@ -107,7 +107,8 @@ public class Player : MonoBehaviour
             }
 
             time += Time.deltaTime;
-            yield return null; // 매 프레임마다 업데이트
+
+            yield return null;
 
             if (time > magnetTime)
             {
@@ -115,15 +116,7 @@ public class Player : MonoBehaviour
                 isMagneticActive = false;
                 yield break;
             }
-            // 계속 적용하도록 설정한 시간이 지난 후에 자석 효과 중지
-            // 예를 들어, 자석 효과를 사용하는 키 입력에 따라 조절 가능
         }
 
-    }
-
-    // 자석 효과를 중지하는 메서드
-    public void StopMagneticEffect()
-    {
-        isMagneticActive = false;
     }
 }
