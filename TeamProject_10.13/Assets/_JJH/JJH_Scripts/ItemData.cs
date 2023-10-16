@@ -11,7 +11,6 @@ public class ItemData : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            print("ASD");
             Player.Instance.AddScore(score);
             gameObject.SetActive(false);
         }
