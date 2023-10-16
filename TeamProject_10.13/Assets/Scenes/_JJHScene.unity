@@ -573,7 +573,7 @@ MonoBehaviour:
   playerScore: 0
   magnetTime: 8
   magnetRange: 15
-  magnetPower: 0.5
+  magnetPower: 7.63
 --- !u!212 &1878317304
 SpriteRenderer:
   m_ObjectHideFlags: 0
