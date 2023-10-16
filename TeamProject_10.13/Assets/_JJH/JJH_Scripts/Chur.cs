@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class Chur : ItemData
 {
-    [SerializeField]
-    private float magnetTime;
+    
 
-
-    void Start()
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.OnTriggerEnter2D(collision); // 기존의 처리를 수행
     }
 }

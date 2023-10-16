@@ -8,14 +8,16 @@ public class Catnip : ItemData
     private float runningTime;
     [SerializeField]
     private float runningMultipleValue;
-    
-    void Start()
-    {
-        
-    }
+    float currentRunningTime;
 
-    void Update()
+    public override void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        base.OnTriggerEnter2D(collision);
+
+        if (collision.gameObject.tag == "Player")
+        {
+            currentRunningTime = runningTime;
+            Player.Instance.IncreaseSpeed(currentRunningTime, runningMultipleValue);
+        }
     }
 }

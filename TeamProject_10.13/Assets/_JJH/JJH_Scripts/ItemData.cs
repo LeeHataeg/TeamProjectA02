@@ -7,7 +7,7 @@ public class ItemData : MonoBehaviour
     [SerializeField]
     private int score;
 
-    void OnCollisionEnter(Collision collision)
+    public virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
