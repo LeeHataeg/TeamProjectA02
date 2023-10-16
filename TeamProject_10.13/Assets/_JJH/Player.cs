@@ -47,7 +47,13 @@ public class Player : MonoBehaviour
         playerScore += score;
     }
 
-    public void IncreaseSpeed(float currentRunningTime , float runningMultipleValue)
+
+
+
+
+
+    #region Player Speed Up
+    public void IncreaseSpeed(float currentRunningTime, float runningMultipleValue)
     {
         float changeSpeed = originSpeed * runningMultipleValue;
         print(changeSpeed);
@@ -64,7 +70,13 @@ public class Player : MonoBehaviour
         // currentRunninTime 이후 원래 속도로 돌아감
         speed = originalSpeed;
     }
+    #endregion
 
+
+
+
+
+    #region Player Magnet Effect
     public void MagneticEffect()
     {
         if (!isMagneticActive)
@@ -117,6 +129,6 @@ public class Player : MonoBehaviour
                 yield break;
             }
         }
-
-    }
+    } 
+    #endregion
 }
