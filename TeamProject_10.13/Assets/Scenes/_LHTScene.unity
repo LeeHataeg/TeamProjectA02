@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 368404629}
   - component: {fileID: 368404628}
   - component: {fileID: 368404627}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368404626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.69, y: -1.3, z: 0}
+  m_LocalPosition: {x: -2, y: -0.11, z: 0}
   m_LocalScale: {x: 1.89, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 1035132711}
   - component: {fileID: 1035132710}
   - component: {fileID: 1035132709}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,8 +468,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035132708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.26, z: 0}
-  m_LocalScale: {x: 1.89, y: 1, z: 1}
+  m_LocalPosition: {x: 4.1482, y: -1.26, z: 0}
+  m_LocalScale: {x: 10.186533, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 1520514090}
   - component: {fileID: 1520514089}
   - component: {fileID: 1520514088}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520514087}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -1.22, z: 0}
+  m_LocalPosition: {x: 5.33, y: -0.14, z: 0}
   m_LocalScale: {x: 1.89, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -722,7 +722,6 @@ GameObject:
   - component: {fileID: 1839918065}
   - component: {fileID: 1839918064}
   - component: {fileID: 1839918063}
-  - component: {fileID: 1839918062}
   - component: {fileID: 1839918066}
   m_Layer: 0
   m_Name: Player
@@ -731,36 +730,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1839918062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839918061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: fd69fd087433d474a9cb6770c0e6efb1, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!61 &1839918063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -819,9 +788,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
-  m_AngularDrag: 0
-  m_GravityScale: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -861,10 +830,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ecaedc241ab72e43b913b51be7d5cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Data>k__BackingField: {fileID: 11400000, guid: e4cd7099029a92b41b1b6a457a45ab13, type: 2}
-  <AnimationData>k__BackingField:
-    groundParameterName: '@Ground'
-    walkParameterName: IsWalk
-    airParameterName: '@Air'
-    jumpParameterName: IsJump
-    landParameterName: Land
+  maxSpeed: 4.5
+  jumpForce: 20
