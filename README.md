@@ -1,5 +1,5 @@
 # TeamProjectA02
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=IndiviualProject1012%20&fontSize=90)
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=A02-임시(작업중)%20&fontSize=90)
 
  <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/C sharp-512BD4?style=flat-square&logo=csharp&logoColor=white"/>
 
