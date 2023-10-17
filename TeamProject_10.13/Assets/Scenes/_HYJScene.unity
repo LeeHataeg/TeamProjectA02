@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 32924538}
   - component: {fileID: 32924539}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41788,7 +41788,7 @@ GameObject:
   - component: {fileID: 815017419}
   m_Layer: 13
   m_Name: TestPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41925,7 +41925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815017418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 92.62, y: -2.41, z: 0}
+  m_LocalPosition: {x: 140.48, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41943,7 +41943,8 @@ GameObject:
   - component: {fileID: 829477179}
   - component: {fileID: 829477181}
   - component: {fileID: 829477180}
-  m_Layer: 0
+  - component: {fileID: 829477182}
+  m_Layer: 14
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41997,7 +41998,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.28}
+  m_Offset: {x: 0, y: -0.41}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -42008,7 +42009,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.125, y: 0.63}
+  m_Size: {x: 1.125, y: 0.41}
   m_EdgeRadius: 0
 --- !u!212 &829477181
 SpriteRenderer:
@@ -42062,6 +42063,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &829477182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829477178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b77b4de4915a40fca4c883490c37679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1193573447
 GameObject:
   m_ObjectHideFlags: 0
@@ -43222,7 +43235,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a03b46ba38a18474c81af55767aca839, type: 3}
       - {fileID: 21300000, guid: 076976dc680a34fcea731a2633189c53, type: 3}
-      m_AnimationSpeed: 1.7968037
+      m_AnimationSpeed: 0.6197247
       m_AnimationTimeOffset: 0.5
       m_Flags: 0
   - first: {x: 102, y: -4, z: 0}
@@ -43231,7 +43244,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a03b46ba38a18474c81af55767aca839, type: 3}
       - {fileID: 21300000, guid: 076976dc680a34fcea731a2633189c53, type: 3}
-      m_AnimationSpeed: 1.7328119
+      m_AnimationSpeed: 1.5772506
       m_AnimationTimeOffset: 0.5
       m_Flags: 0
   - first: {x: 112, y: -4, z: 0}
@@ -43240,7 +43253,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a03b46ba38a18474c81af55767aca839, type: 3}
       - {fileID: 21300000, guid: 076976dc680a34fcea731a2633189c53, type: 3}
-      m_AnimationSpeed: 1.6830772
+      m_AnimationSpeed: 1.6366976
       m_AnimationTimeOffset: 0.5
       m_Flags: 0
   - first: {x: 143, y: -3, z: 0}
@@ -43249,7 +43262,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a03b46ba38a18474c81af55767aca839, type: 3}
       - {fileID: 21300000, guid: 076976dc680a34fcea731a2633189c53, type: 3}
-      m_AnimationSpeed: 1.3663566
+      m_AnimationSpeed: 1.3519832
       m_AnimationTimeOffset: 0.5
       m_Flags: 0
   - first: {x: 144, y: -3, z: 0}
@@ -43258,7 +43271,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a03b46ba38a18474c81af55767aca839, type: 3}
       - {fileID: 21300000, guid: 076976dc680a34fcea731a2633189c53, type: 3}
-      m_AnimationSpeed: 0.78878254
+      m_AnimationSpeed: 1.5341811
       m_AnimationTimeOffset: 0.5
       m_Flags: 0
   - first: {x: 145, y: -3, z: 0}
@@ -43267,7 +43280,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: a03b46ba38a18474c81af55767aca839, type: 3}
       - {fileID: 21300000, guid: 076976dc680a34fcea731a2633189c53, type: 3}
-      m_AnimationSpeed: 0.9408803
+      m_AnimationSpeed: 0.5022849
       m_AnimationTimeOffset: 0.5
       m_Flags: 0
   m_TileAssetArray:
@@ -43743,7 +43756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1754396732}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
