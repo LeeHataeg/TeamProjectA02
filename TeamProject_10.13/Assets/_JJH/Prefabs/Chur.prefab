@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6029448034717368558}
   m_Layer: 0
   m_Name: Chur
-  m_TagString: Chur
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10250
+  animYPos: 0.015
+  animDelayTime: 0.01
 --- !u!70 &590507716227384146
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
