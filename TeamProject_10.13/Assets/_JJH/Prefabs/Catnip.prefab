@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6475433506363368626}
   m_Layer: 0
   m_Name: Catnip
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 15250
-  runningTime: 10
+  runningTime: 3
   runningMultipleValue: 2
 --- !u!70 &5460129381423360111
 CapsuleCollider2D:
