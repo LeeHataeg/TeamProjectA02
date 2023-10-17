@@ -7,6 +7,7 @@ using UnityEngine.InputSystem.XR;
 
 public class PlayerController : MonoBehaviour
 {
+
     [SerializeField] private float originSpeed;
     public float jumpForce;
     Rigidbody2D rigid;
@@ -49,6 +50,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            anim.SetBool("IsWalk", false);
             anim.SetBool("IsWalk", true);
         }
     }
