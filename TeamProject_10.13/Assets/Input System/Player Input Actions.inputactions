@@ -1,5 +1,5 @@
 {
-    "name": "New Controls",
+    "name": "Player Input Actions",
     "maps": [
         {
             "name": "Player",
@@ -44,17 +44,6 @@
                     "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "c35343af-ec9a-42db-a5be-4f4127c5c87b",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
