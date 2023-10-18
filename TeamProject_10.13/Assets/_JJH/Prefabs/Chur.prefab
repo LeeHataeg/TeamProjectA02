@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4ae4e7ebbef6d874991bfbb25692db55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,8 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10250
-  animYPos: 0.015
-  animDelayTime: 0.01
 --- !u!70 &590507716227384146
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
