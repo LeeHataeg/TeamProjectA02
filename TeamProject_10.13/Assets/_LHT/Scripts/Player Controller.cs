@@ -7,6 +7,10 @@ using UnityEngine.InputSystem.XR;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject SpawnPointA;
+    public GameObject SpawnPointB;
+    public GameObject MiddlePoint;
+
     private string enemyTag = "Enemy";
 
     public float maxSpeed;
@@ -71,6 +75,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("IsWalk", false);
             anim.SetBool("IsWalk", true);
         }
+        Respawn();
     }
 
     private void FixedUpdate()
@@ -109,12 +114,35 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
+    void Respawn()
+    {
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Spike"));
 
+        Vector2 playerPos = gameObject.transform.position;
+
+        if (rayHit.collider != null)
+        {
+
+            if (rayHit.distance < 0.8f)
+            {
+                GameManager.Instance.ReduceHp(1);
+                StartCoroutine(PlayerFreeze());
+                gameObject.transform.position = new Vector3(playerPos.x - 5, playerPos.y + 2, 0);
+            }
+        }
+    }
     //µ¥¹Ì ¾îÂî Ã³¸®ÇÒ Áö 
     //»¡°²°Ô
     //³Ë¹é
     //IEnumerator
+
+    IEnumerator PlayerFreeze()
+    {
+        Time.timeScale = 0.2f;
+        yield return new WaitForSeconds(0.2f);
+        Debug.Log("10");
+        Time.timeScale = 1;
+    }
 
     #region Player Speed Up
     public void IncreaseSpeed(float currentRunningTime, float runningMultipleValue)
