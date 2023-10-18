@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Item
   - Enemy
-  - Platform
+  - Spike
   layers:
   - Default
   - TransparentFX
