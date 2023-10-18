@@ -109,13 +109,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision collision)
-    {
-        if(collision.gameObject.tag == enemyTag)
-        {
+    
 
-        }
-    }
+    //µ¥¹Ì ¾îÂî Ã³¸®ÇÒ Áö 
+    //»¡°²°Ô
+    //³Ë¹é
+    //IEnumerator
 
     #region Player Speed Up
     public void IncreaseSpeed(float currentRunningTime, float runningMultipleValue)
