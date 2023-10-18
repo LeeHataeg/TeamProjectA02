@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class EnemyMove : MonoBehaviour
 {
     Rigidbody2D rigid;
-    // Animator anim;
+    BoxCollider2D collider2D;
+    Animator anim;
     SpriteRenderer spriteRenderer;
     public int nextMove;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-        // anim = GetComponent<Animator>();
+        collider2D = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         Invoke("Think",5);
@@ -36,10 +41,13 @@ public class EnemyMove : MonoBehaviour
         nextMove = Random.Range(-1, 2);
 
         // anim.SetInteger("WalkSpeed", nextMove);
+        anim.SetBool("isWalk", false);
         if (nextMove != 0) spriteRenderer.flipX = nextMove == 1;
-
+        if (nextMove != 0) spriteRenderer.flipX = nextMove == 1;
+        
         float nextThinkTime = Random.Range(1f, 5f);
         Invoke("Think", nextThinkTime);
+        anim.SetBool("isWalk", true);
     }
 
     void Turn()
@@ -50,4 +58,14 @@ public class EnemyMove : MonoBehaviour
         CancelInvoke();
         Invoke("Think", 2);
     }
+
+    //void OnCollisionStay2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Enemy") collider2D.isTrigger = true;
+    //}
+
+    //void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    collider2D.isTrigger = false;
+    //}
 }
