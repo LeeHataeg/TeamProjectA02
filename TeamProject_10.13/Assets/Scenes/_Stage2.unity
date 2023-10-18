@@ -37171,7 +37171,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6e150f172f46d49589050389ddd8d5e0, type: 3}
       - {fileID: 21300000, guid: 446165a4290ce45b39561506967d61c8, type: 3}
-      m_AnimationSpeed: 4.5463505
+      m_AnimationSpeed: 4.8450046
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 57, y: -4, z: 0}
@@ -37180,7 +37180,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6e150f172f46d49589050389ddd8d5e0, type: 3}
       - {fileID: 21300000, guid: 446165a4290ce45b39561506967d61c8, type: 3}
-      m_AnimationSpeed: 4.4136796
+      m_AnimationSpeed: 2.3340623
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 58, y: -4, z: 0}
@@ -37189,7 +37189,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6e150f172f46d49589050389ddd8d5e0, type: 3}
       - {fileID: 21300000, guid: 446165a4290ce45b39561506967d61c8, type: 3}
-      m_AnimationSpeed: 2.13008
+      m_AnimationSpeed: 2.295873
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 59, y: -4, z: 0}
@@ -37198,7 +37198,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6e150f172f46d49589050389ddd8d5e0, type: 3}
       - {fileID: 21300000, guid: 446165a4290ce45b39561506967d61c8, type: 3}
-      m_AnimationSpeed: 2.8506463
+      m_AnimationSpeed: 3.0280936
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 82, y: -4, z: 0}
@@ -37207,7 +37207,7 @@ Tilemap:
       m_AnimatedSprites:
       - {fileID: 21300000, guid: 6e150f172f46d49589050389ddd8d5e0, type: 3}
       - {fileID: 21300000, guid: 446165a4290ce45b39561506967d61c8, type: 3}
-      m_AnimationSpeed: 4.5766063
+      m_AnimationSpeed: 4.35578
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -37810,7 +37810,7 @@ GameObject:
   - component: {fileID: 955795123}
   m_Layer: 14
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
