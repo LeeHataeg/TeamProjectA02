@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,6 @@ public class Timer : MonoBehaviour
     public float gameTime = 5.0f;
     private float currentTime;
     private bool isGameActive = false;
-
     public TextMeshProUGUI timeText;
 
     private void Start()
@@ -29,10 +29,14 @@ public class Timer : MonoBehaviour
 
         
         currentTime -= Time.deltaTime;
-        UpdateTimeText();
-        if(currentTime <= 0)
+
+
+        timeText.text = "TIME " + currentTime.ToString("N2");
+
+        if (currentTime <= 0)
         {
             isGameActive = false;
+
         }
     }
 
@@ -43,13 +47,11 @@ public class Timer : MonoBehaviour
 
     private void EndGame()
     {
+        timeText.text = "TIME 0.00";
         Time.timeScale = 0;
         currentTime = 0;
         // 게임 종료 시 수행할 작업 추가
     }
 
-    private void UpdateTimeText()
-    {
-        timeText.text = "TIME " + currentTime.ToString("N1");
-    }
+   
 }
