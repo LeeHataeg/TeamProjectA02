@@ -10,35 +10,35 @@ public class HeartBox : MonoBehaviour
     public GameObject HalfHeart;
     public GameObject EmptyHeart;
 
-    Vector3 initPos = new Vector3(100f, 0, 0);
+    Vector3 plusPos = new Vector3(100f, 0, 0);
 
     private int exHP = 0;
 
-    private void Start()
-    {
-        UpdateHP();
-    }
     public void UpdateHP()
     {
+        Debug.Log(transform.position);
         int heartCount = 0;
         int count = transform.childCount;
         for (int i = 0; i < count; i++)
         {
+            //기존 하트 모두 없애기
             Destroy(transform.GetChild(i).gameObject);
+            Debug.Log("1");
         }
         for (int i = 0; i < GameManager.Instance.CurrentHP / 2; i++)
         {
-            Instantiate(FullHeart, transform.position + initPos*heartCount, Quaternion.identity, transform);
+            Instantiate(FullHeart, transform.position + plusPos*heartCount, Quaternion.identity, transform);
             heartCount++;
+            Debug.Log("2");
         }
         for (int i = 0; i < GameManager.Instance.CurrentHP % 2; i++)
         {
-            Instantiate(HalfHeart, transform.position + initPos * heartCount, Quaternion.identity, transform);
+            Instantiate(HalfHeart, transform.position + plusPos * heartCount, Quaternion.identity, transform);
             heartCount++;
         }
         for (int i = 0; i < (GameManager.Instance.MaxHP - GameManager.Instance.CurrentHP) / 2; i++)
         {
-            Instantiate(EmptyHeart, transform.position + initPos * heartCount, Quaternion.identity, transform);
+            Instantiate(EmptyHeart, transform.position + plusPos * heartCount, Quaternion.identity, transform);
             heartCount++;
         }
     }
