@@ -25,6 +25,7 @@ public class AnimationData
         GroundParameterHash = Animator.StringToHash(groundParameterName);
         WalkParameterHash = Animator.StringToHash(walkParameterName);
 
+
         AirParameterHash = Animator.StringToHash(airParameterName);
         JumpParameterHash = Animator.StringToHash(jumpParameterName);
     }

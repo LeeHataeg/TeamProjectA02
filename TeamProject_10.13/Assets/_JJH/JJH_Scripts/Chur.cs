@@ -10,7 +10,7 @@ public class Chur : ItemData
 
         if (collision.gameObject.tag == "Player")
         {
-            Player.Instance.MagneticEffect();
+            PlayerController.Instance.MagneticEffect();
         }
     }
 }

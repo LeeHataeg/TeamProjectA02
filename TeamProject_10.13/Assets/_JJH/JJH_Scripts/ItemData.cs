@@ -12,7 +12,7 @@ public class ItemData : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Player.Instance.AddScore(score);
+            //Player.Instance.AddScore(score);
             gameObject.SetActive(false);
         }
     }

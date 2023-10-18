@@ -17,7 +17,7 @@ public class Catnip : ItemData
         if (collision.gameObject.tag == "Player")
         {
             currentRunningTime = runningTime;
-            Player.Instance.IncreaseSpeed(currentRunningTime, runningMultipleValue);
+            PlayerController.Instance.IncreaseSpeed(currentRunningTime, runningMultipleValue);
         }
     }
 }
