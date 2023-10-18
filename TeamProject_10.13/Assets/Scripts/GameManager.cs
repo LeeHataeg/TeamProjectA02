@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonBase<GameManager>
 {
-    void Start()
+    #region Player Heart
+    private int maxHP;
+    public int MaxHP
     {
-        
+        get { return maxHP; }
+        private set { maxHP = Mathf.Clamp(value, 0, 10); }
     }
 
-    void Update()
+    private int currentHP;
+    public int CurrentHP
     {
-        
-    }
+        get { return currentHP; }
+        private set { currentHP = Mathf.Clamp(value, 0, maxHP); }
+        }
+    #endregion
+
 }

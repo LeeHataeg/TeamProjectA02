@@ -7,6 +7,7 @@ using UnityEngine.InputSystem.XR;
 
 public class PlayerController : MonoBehaviour
 {
+    private string enemyTag = "Enemy";
 
     public float maxSpeed;
     float originSpeed;
@@ -105,6 +106,14 @@ public class PlayerController : MonoBehaviour
         else if (rigid.velocity.x < maxSpeed * (-1))
         {
             rigid.velocity = new Vector2(maxSpeed * -1, rigid.velocity.y);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision collision)
+    {
+        if(collision.gameObject.tag == enemyTag)
+        {
+
         }
     }
 
