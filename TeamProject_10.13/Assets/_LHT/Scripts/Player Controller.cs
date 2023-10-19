@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public GameObject MiddlePoint;
 
     private string enemyTag = "Enemy";
+    public int playerScore;
 
     public float maxSpeed;
     float originSpeed;
@@ -102,6 +103,11 @@ public class PlayerController : MonoBehaviour
                 rayHit2.collider.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void AddScore(int score)
+    {
+        playerScore += score;
     }
     void MovePlayer()
     {

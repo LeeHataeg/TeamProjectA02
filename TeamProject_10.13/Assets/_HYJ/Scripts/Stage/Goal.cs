@@ -7,13 +7,13 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
-    private Player _player;
+    private PlayerController _player;
     public GameObject gameEndGroup;
     public Text score;
 
     private void Awake()
     {
-        _player = GetComponent<Player>();
+        _player = GetComponent<PlayerController>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -35,8 +35,6 @@ public class Goal : MonoBehaviour
 
     void GameFinish()
     {
-        Debug.Log(_player.playerScore.ToString());
-        Debug.Log("2");
         score.text = "점수 : " + _player.playerScore.ToString();
         gameEndGroup.SetActive(true);
     }
