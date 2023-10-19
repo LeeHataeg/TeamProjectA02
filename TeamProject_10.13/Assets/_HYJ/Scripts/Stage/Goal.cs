@@ -1,10 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
+    private Player _player;
+    public GameObject gameEndGroup;
+    public Text score;
+
+    private void Awake()
+    {
+        _player = GetComponent<Player>();
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -24,6 +35,7 @@ public class Goal : MonoBehaviour
 
     void GameFinish()
     {
-        Debug.Log("Game finished!");
+        score.text = "점수 : " + _player.playerScore.ToString();
+        gameEndGroup.SetActive(true);
     }
 }
