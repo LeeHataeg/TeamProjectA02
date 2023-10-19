@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
         currentTime -= Time.deltaTime;
 
 
-        timeText.text = "TIME " + currentTime.ToString("N2");
+        timeText.text = "TIME\n" + currentTime.ToString("N2");
 
         if (currentTime <= 0)
         {
