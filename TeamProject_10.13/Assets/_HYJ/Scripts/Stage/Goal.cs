@@ -35,6 +35,8 @@ public class Goal : MonoBehaviour
 
     void GameFinish()
     {
+        Debug.Log(_player.playerScore.ToString());
+        Debug.Log("2");
         score.text = "점수 : " + _player.playerScore.ToString();
         gameEndGroup.SetActive(true);
     }
