@@ -87,14 +87,19 @@ public class PlayerController : MonoBehaviour
         if (rigid.velocity.y < 0)
         {
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Platform"));
+            RaycastHit2D rayHit2 = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Enemy"));
 
             if (rayHit.collider != null)
             {
-
                 if (rayHit.distance < 0.8f)
                 {
                     anim.SetBool("IsJump", false);
                 }
+            }
+
+            if (rayHit2.collider != null)
+            {
+                rayHit2.collider.gameObject.SetActive(false);
             }
         }
     }
@@ -114,7 +119,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Respawn()
+    public void Respawn()
     {
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Spike"));
 
@@ -136,7 +141,7 @@ public class PlayerController : MonoBehaviour
     //³Ë¹é
     //IEnumerator
 
-    IEnumerator PlayerFreeze()
+    public IEnumerator PlayerFreeze()
     {
         Time.timeScale = 0.2f;
         yield return new WaitForSeconds(0.2f);

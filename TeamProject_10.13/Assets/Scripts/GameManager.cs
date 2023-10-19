@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
         if(_instance == null)
         {
             _instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         heart = HeartBox.GetComponent<HeartBox>();
     }
@@ -73,9 +72,7 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        
         //GameOverUI
-        
     }
     private void GameStart()
     {
