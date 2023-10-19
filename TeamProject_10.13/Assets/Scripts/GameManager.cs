@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
 
     HeartBox heart;
 
+    public GameObject gameOverGroup;
+
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -72,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        //GameOverUI
+        gameOverGroup.SetActive(true);
     }
     private void GameStart()
     {
