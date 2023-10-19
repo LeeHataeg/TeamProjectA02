@@ -136,6 +136,23 @@ public class PlayerController : MonoBehaviour
     //³Ë¹é
     //IEnumerator
 
+    IEnumerator KnockBack(Vector2 Force)
+    {
+        speed = 2f;
+
+        float length = 0.3f;
+        float overTime = 0.1f;
+        float timeLeft = overTime;
+        while (timeLeft > 0)
+        {
+            transform.Translate(Force * length * Time.deltaTime / overTime);
+            timeLeft -= Time.deltaTime;
+            yield return null;
+        }
+
+        speed = 4f;
+    }
+
     IEnumerator PlayerFreeze()
     {
         Time.timeScale = 0.2f;
