@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.Instance.ReduceHp(1);
                 StartCoroutine(PlayerFreeze());
-                gameObject.transform.position = new Vector3(playerPos.x - 5, playerPos.y + 2, 0);
+                gameObject.transform.position = new Vector3(playerPos.x - 5, playerPos.y + 3, 0);
             }
         }
     }
