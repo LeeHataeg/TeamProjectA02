@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Respawn()
+    public void Respawn()
     {
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Spike"));
 
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour
     //³Ë¹é
     //IEnumerator
 
-    IEnumerator PlayerFreeze()
+    public IEnumerator PlayerFreeze()
     {
         Time.timeScale = 0.2f;
         yield return new WaitForSeconds(0.2f);
