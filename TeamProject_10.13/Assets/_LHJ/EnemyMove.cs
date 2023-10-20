@@ -65,6 +65,7 @@ public class EnemyMove : MonoBehaviour
         {
             Vector2 playerPos = collision.gameObject.transform.position;
             GameManager.Instance.ReduceHp(1);
+            PointManager.Instance.AddScore(1000);
             StartCoroutine(PlayerController.Instance.PlayerFreeze());
             collision.gameObject.transform.position = new Vector3(playerPos.x - 5, playerPos.y + 2, 0);
 
