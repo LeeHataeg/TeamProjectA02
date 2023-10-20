@@ -3,14 +3,39 @@
 
  <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/C sharp-512BD4?style=flat-square&logo=csharp&logoColor=white"/>
 
+# 유니티 심화 주차 팀 프로젝트
+- A02조 이하택 임현진 정재호 함영주
+<br>
 
-## 게임 컨셉
+## 🖥 프로젝트 소개 
 
+<br>
+
+### 🕰 **프로젝트 기간** : 2023.10.13 ~ 2023.10.20
+
+### ✅ 개발 환경 
+**Unity 2022.3.2f** 
+-해상도 :  1980 * 1280
+<br>
+
+### ✅제작 과정
+- 기획
+    
+[와이어 프레임](https://www.figma.com/file/mwMfzVmJ7YWsKoBJJx8fVk/%EC%8B%AC%ED%99%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?type=whiteboard&node-id=0-1&t=ybKfU21kvG7C84Cj-0) <br>
 [팀 노션](https://www.notion.so/02-55ee06ccbc1148429fee53db9ece7bc8)
+<br>
 
-## 게임 소개
 
-- 게임 이름 : Hataeg, Attack!!
+<br>
+
+## ✅ 게임 소개
+
+## 🐈‍⬛ **게임명** : Hataeg, Attack!!
+- 우리들의 깜찍한 고양이가 적(인간)들을 피해 아기 고양이를 구출 하는 여정의 플랫포머 2D 게임
+
+<br>
+
+### **게임 화면**
 
 - 구현 사항
    - 고양이 데미지
@@ -34,7 +59,7 @@
 <br>
 
 ## 이하택님
-
+- Player 기능 담당 
 - 1차 시도 : "StateMachine으로 구현하자"
   - 본강의를 참고하려 했으나, 3D캐릭터 움직임에 대한 State와 2D 플랫포머 캐릭터의 State의 차이를 메꾸지 못하고 시간을 소비했다.
 
@@ -82,7 +107,8 @@ private void Update()
 <br>
 
 ## 정재호님
-
+- 아이템 기능 담당
+  
 ![image](https://github.com/LeeHataeg/TeamProjectA02/assets/139848355/787f482a-65aa-4d82-b800-7ca73b46c646)
 
 - 아이템을 맵에 배치하여 Player태그와 충돌 시 Active 설정을 변경하도록 한다.
@@ -161,7 +187,6 @@ private void Update()
 
             if (time > magnetTime)
             {
-
                 isMagneticActive = false;
                 yield break;
             }
@@ -174,13 +199,15 @@ private void Update()
 <br>
 
 ## 함영주님
-
+- 맵 기능 담당
+- 타일맵 : 애니매이티드 타일, 움직이는 플랫폼, 물 플랫폼, 스프링 타일
+- 타이머 : 타임어택
 <br>
 <br>
 <br>
 
 ## 임현진님
-
+- 적 기능 담당
 <br>
 <br>
 <br>
