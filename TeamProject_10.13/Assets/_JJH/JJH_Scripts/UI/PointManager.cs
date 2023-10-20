@@ -6,7 +6,7 @@ using TMPro;
 public class PointManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreTxt;
-    int printScore = 0;
+    public int printScore = 0;
 
     private static PointManager instance;
     public static PointManager Instance { get { return instance; } }

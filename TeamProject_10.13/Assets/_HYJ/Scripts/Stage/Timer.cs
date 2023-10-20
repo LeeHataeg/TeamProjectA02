@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     private bool isGameActive = false;
     public TextMeshProUGUI timeText;
 
+
     private void Start()
     {
         StartGame();
@@ -23,7 +24,7 @@ public class Timer : MonoBehaviour
     {
         if (!isGameActive)
         {
-            EndGame();
+            GameManager.Instance.GameOver();
             return;
         }
 
@@ -31,7 +32,7 @@ public class Timer : MonoBehaviour
         currentTime -= Time.deltaTime;
 
 
-        timeText.text = "TIME\n" + currentTime.ToString("N2");
+        timeText.text = "TIME " + currentTime.ToString("N2");
 
         if (currentTime <= 0)
         {
@@ -45,13 +46,7 @@ public class Timer : MonoBehaviour
         isGameActive = true;
     }
 
-    private void EndGame()
-    {
-        timeText.text = "TIME 0.00";
-        Time.timeScale = 0;
-        currentTime = 0;
-        // 게임 종료 시 수행할 작업 추가
-    }
+  
 
    
 }
