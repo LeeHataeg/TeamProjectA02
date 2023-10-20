@@ -86,7 +86,6 @@ private void Update()
 
 - 아이템을 맵에 배치하여 Player태그와 충돌 시 Active 설정을 변경하도록 한다.
 
-  
 - 각 아이템은 속도, 자석효과 등이 있다.
 ![아이템 - 자석](https://github.com/LeeHataeg/TeamProjectA02/assets/139848355/79e89383-cd3b-428c-91d0-6e132dca27f2)
 
@@ -100,14 +99,9 @@ private void Update()
 <br>
 <br>
 
-## 안소정님
-
-
-<br>
-<br>
-<br>
-
 ## 임현진님
 
-
+<br>
+<br>
+<br>
 
