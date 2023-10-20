@@ -3,6 +3,7 @@
 
  <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/C sharp-512BD4?style=flat-square&logo=csharp&logoColor=white"/>
 
+
 ## 게임 컨셉
 
 [팀 노션](https://www.notion.so/02-55ee06ccbc1148429fee53db9ece7bc8)
@@ -89,6 +90,85 @@ private void Update()
 - 각 아이템은 속도, 자석효과 등이 있다.
 ![아이템 - 자석](https://github.com/LeeHataeg/TeamProjectA02/assets/139848355/79e89383-cd3b-428c-91d0-6e132dca27f2)
 
+```cs
+
+//........
+
+#region Player Speed Up
+    public void IncreaseSpeed(float currentRunningTime, float runningMultipleValue)
+    {
+        float changeSpeed = originSpeed * runningMultipleValue;
+        print(changeSpeed);
+
+        maxSpeed = changeSpeed;
+        // 증가한 속도를 원래 속도로 되돌리기 위한 코루틴 시작
+        StartCoroutine(ResetSpeedAfterTime(currentRunningTime, originSpeed));
+    }
+    private IEnumerator ResetSpeedAfterTime(float currentRunningTime, float originalSpeed)
+    {
+        yield return new WaitForSeconds(currentRunningTime);
+        print(currentRunningTime);
+        // currentRunninTime 이후 원래 속도로 돌아감
+        maxSpeed = originalSpeed;
+    }
+    #endregion
+
+    #region Player Magnet Effect
+    public void MagneticEffect()
+    {
+        if (!isMagneticActive)
+        {
+            StartCoroutine(ApplyMagneticEffectContinuously());
+        }
+    }
+
+    private IEnumerator ApplyMagneticEffectContinuously()
+    {
+        isMagneticActive = true;
+        float time = 0;
+
+        while (isMagneticActive)
+        {
+            // 플레이어의 위치
+            Vector2 playerPosition = transform.position;
+
+            // 모든 ItemData 오브젝트를 찾음
+            ItemData[] itemsInScene = FindObjectsOfType<ItemData>();
+
+            foreach (ItemData item in itemsInScene)
+            {
+                // 아이템과 플레이어 사이의 거리를 계산
+                float distanceToPlayer = Vector2.Distance(playerPosition, item.transform.position);
+
+                // 만약 아이템이 자석 효과 범위 내에 있다면
+                if (distanceToPlayer <= magnetRange)
+                {
+                    // 자석 효과 방향을 계산
+                    Vector2 forceDirection = (playerPosition - (Vector2)item.transform.position).normalized;
+
+                    // 아이템에 자석 효과를 적용
+                    Rigidbody2D itemRigidbody = item.GetComponent<Rigidbody2D>();
+                    if (itemRigidbody != null)
+                    {
+                        itemRigidbody.AddForce(magnetPower * forceDirection, ForceMode2D.Force);
+                    }
+                }
+            }
+
+            time += Time.deltaTime;
+
+            yield return null;
+
+            if (time > magnetTime)
+            {
+
+                isMagneticActive = false;
+                yield break;
+            }
+        }
+    }
+    #endregion
+```
 <br>
 <br>
 <br>
