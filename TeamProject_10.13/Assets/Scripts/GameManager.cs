@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         heart.UpdateHP();
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         gameOverGroup.SetActive(true);
     }
