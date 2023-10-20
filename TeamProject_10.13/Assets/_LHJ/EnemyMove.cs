@@ -59,13 +59,16 @@ public class EnemyMove : MonoBehaviour
         Invoke("Think", 2);
     }
 
-    //void OnCollisionStay2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.tag == "Enemy") collider2D.isTrigger = true;
-    //}
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Vector2 playerPos = collision.gameObject.transform.position;
+            GameManager.Instance.ReduceHp(1);
+            PointManager.Instance.AddScore(1000);
+            StartCoroutine(PlayerController.Instance.PlayerFreeze());
+            collision.gameObject.transform.position = new Vector3(playerPos.x - 5, playerPos.y + 2, 0);
 
-    //void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    collider2D.isTrigger = false;
-    //}
+        }
+    }
 }
