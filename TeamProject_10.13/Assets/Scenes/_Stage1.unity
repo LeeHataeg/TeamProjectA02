@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1578115e4c18a4235a64d76d42fd24a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 5
+  gameTime: 60
   timeText: {fileID: 463764105095661706}
 --- !u!224 &2977115364724492039
 RectTransform:
