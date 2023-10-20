@@ -3,6 +3,8 @@
 
  <img src="https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/C sharp-512BD4?style=flat-square&logo=csharp&logoColor=white"/>
 
+![53465415-고양이-손](https://github.com/LeeHataeg/TeamProjectA02/assets/139848355/5558d434-1e86-4c97-8d6d-7bc938b0ec01)(https://youtu.be/qzlyeXB9Oe8)
+
 ## 게임 컨셉
 
 [팀 노션](https://www.notion.so/02-55ee06ccbc1148429fee53db9ece7bc8)
