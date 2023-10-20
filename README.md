@@ -41,7 +41,40 @@
 
 
 ```Cs
+private void Update()
+{
+    Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, transform.position.z), Vector2.down * 0.8f);
+    //Jump
+    if (Input.GetButtonDown("Jump") && !anim.GetBool("IsJump"))
+    {
+        rigid.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        anim.SetBool("IsJump", true);
+    }
 
+    //Stop Speed
+    if (Input.GetButtonUp("Horizontal"))
+    {
+        rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
+    }
+
+    //Direction Sprite
+    if (Input.GetButtonDown("Horizontal"))
+    {
+        spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
+    }
+
+    //
+    if (rigid.velocity.normalized.x == 0)
+    {
+        anim.SetBool("IsWalk", false);
+    }
+    else
+    {
+        anim.SetBool("IsWalk", false);
+        anim.SetBool("IsWalk", true);
+    }
+    Respawn();
+}
 ```
 <br>
 <br>
